@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy — Tarlev Returns Automation Bot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: Arial, Helvetica, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; color: #222; line-height: 1.6; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 18px; margin-top: 28px; }
+  .updated { color: #666; font-size: 14px; margin-bottom: 24px; }
+  code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
+  a.back { display: inline-block; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<a class="back" href="index.html">&larr; Home</a>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: September 26, 2026</p>
+
+<p>This Privacy Policy describes how the <strong>Tarlev Returns Automation Bot</strong> ("the Application", "we", "our") accesses and uses data through the Google account <code>aiintegrationbot@gmail.com</code>.</p>
+
+<h2>1. What this Application does</h2>
+<p>The Application is an internal automation tool used by Tarlev group of companies to process customer return documents (накладні на повернення) received by email. It is not a public-facing product and is not distributed to third parties.</p>
+<p>The Application:</p>
+<ul>
+  <li>Reads incoming emails and attached files (PDF, XLS/XLSX, DOCX) sent to the connected Gmail inbox.</li>
+  <li>Extracts structured data (contractor, organization, product return details) from those attachments.</li>
+  <li>Creates corresponding accounting documents in an internal 1C:Enterprise system.</li>
+  <li>Sends summary emails back to internal staff reporting the result of this processing.</li>
+  <li>Marks processed emails as read.</li>
+</ul>
+
+<h2>2. Google user data accessed</h2>
+<p>The Application connects to the Gmail API using OAuth 2.0 and requests the following types of access for the single mailbox <code>aiintegrationbot@gmail.com</code>:</p>
+<ul>
+  <li>Read email messages and attachments (to extract return document data).</li>
+  <li>Modify message state (mark messages as read).</li>
+  <li>Send email messages (to deliver processing summary reports to internal staff).</li>
+</ul>
+
+<h2>3. How this data is used</h2>
+<p>Data obtained from Gmail is used solely to:</p>
+<ul>
+  <li>Parse business documents (product return notices) attached to emails.</li>
+  <li>Automatically create corresponding documents in the company's internal accounting system (1C:Enterprise).</li>
+  <li>Notify internal staff, by email, of the outcome of this processing.</li>
+</ul>
+<p>No data obtained through the Gmail API is used for advertising, sold, or shared with any third party. Data is not used to train generative AI/ML models.</p>
+
+<h2>4. Data storage and retention</h2>
+<ul>
+  <li>Email content and attachments are processed transiently by the internal workflow automation system (n8n, self-hosted) and the company's internal 1C:Enterprise database.</li>
+  <li>No email content is stored outside of the company's own internal, self-hosted infrastructure.</li>
+  <li>Processed emails remain in the connected Gmail mailbox (marked as read) subject to the mailbox's own retention settings.</li>
+</ul>
+
+<h2>5. Data sharing</h2>
+<p>We do not share, sell, or transfer any Google user data to third parties. Data extracted from emails is used exclusively within the company's own internal systems for the purpose described above.</p>
+
+<h2>6. Security</h2>
+<p>Access to the connected Gmail account and the internal automation system is restricted to authorized personnel of the company. OAuth credentials are stored securely within the self-hosted automation platform.</p>
+
+<h2>7. Google API Services User Data Policy</h2>
+<p>The Application's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>8. Contact</h2>
+<p>For questions about this Privacy Policy, contact: <a href="mailto:aiintegrationbot@gmail.com">aiintegrationbot@gmail.com</a>.</p>
+
+</body>
+</html>
